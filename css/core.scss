@@ -1,0 +1,122 @@
+header {
+  background-color: $githubGrey;
+  border-bottom: 1px $githubDarkGrey solid;
+  height: 49px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  a {
+    font-size: .85em;
+    font-weight: bold;
+    &:link {
+      color: black
+    }
+    &:hover {
+      color: $linkColor;
+      text-decoration: none;
+    }
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+.top-nav {
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: .75%;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 1.5%;
+  }
+}
+
+.top-nav li, .top-nav span {
+  vertical-align: middle;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  font-size: .75em;
+  border-radius: 5%;
+}
+
+
+a {
+  text-decoration: none;
+  &:link {
+    color: $linkColor;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $linkColor;
+  }
+}
+
+.wrapper {
+  margin: 10 auto;
+  width: 80%;
+}
+
+.side-panel {
+
+}
+
+.container {
+
+}
+
+// FOOTER
+
+footer {
+  color: $textColor;
+  font-size: .75em;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.col-3 {
+  width: 45%;
+  float: left;
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
+.col-3-middle{
+  float: left;
+  width: 5%;
+  display: inline-block;
+}
+
+.col-3, .col-3-middle{
+  vertical-align:  middle;
+}
+
+.bottom-nav{
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 1% 1.5%;
+  }
+}
+
+#left-bn {
+  margin-left: 21%;
+}
+
+#bottomOct {
+  font: normal normal normal 25px/1 octicons;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1)
+}
