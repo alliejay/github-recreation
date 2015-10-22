@@ -21,6 +21,60 @@ header {
   }
 }
 
+a {
+  text-decoration: none;
+  &:link {
+    color: $linkColor;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $linkColor;
+  }
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 1.05em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.25em;
+  color: $textColor;
+  margin: 5px;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: .9em;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+
+h5 {
+  font-size: .8em;
+  font-weight: normal;
+  margin: 0;
+  display: inline-block;
+}
+
+section {
+  display: inline-block;
+}
+
+#OP {
+  -webkit-filter: opacity(.5);
+  filter: opacity(.5);
+  display: inline-block;
+}
+
+// TOP NAV
 .top-nav {
   ul{
     list-style-type: none;
@@ -45,32 +99,180 @@ input {
   border-radius: 5%;
 }
 
-
-a {
-  text-decoration: none;
-  &:link {
-    color: $linkColor;
-  }
-  &:hover{
-    text-decoration: underline;
-  }
-  &:visited {
-    color: $linkColor;
-  }
-}
-
+// MAIN SECTIONS
 .wrapper {
-  margin: 10 auto;
   width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid $githubDarkGrey;
 }
 
 .side-panel {
-
+  margin-top: 20px;
+  width: 25%;
+  display: inline-block;
 }
+
+#top-side {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $githubDarkGrey;
+}
+
+#pfpic {
+  width: 100%;
+  border-radius: 5%;
+}
+
+#second-side {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $githubDarkGrey;
+}
+
+#third-side {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $githubDarkGrey;
+  text-align: center;
+}
+
+#bottom-side  {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  img {
+    width: 15%;
+  }
+}
+
+.social {
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+
+.s1, .s2, .s3 {
+  width: 32%;
+  vertical-align: middle;
+  text-align: center;
+  a {
+    &:link {
+      margin: 0;
+      color: $textColor;
+    }
+    &:visited {
+      color: $textColor;
+    }
+    &:hover {
+      color: $linkColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.special {
+  a {
+    &:link {
+      color: $linkColor;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:visited {
+      color: $linkColor;
+    }
+  }
+}
+
+.side-panel, .container {
+  vertical-align: top;
+}
+
+// CONTAINER
 
 .container {
-
+  margin: 20px 0 15px 15px;
+  width: 70%;
+  display: inline-block;
 }
+
+.containerNav {
+  border-bottom: 1px solid $githubDarkGrey;
+  font-size: .9em;
+  color: $textColor;
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 1%;
+  }
+}
+
+#contentArea1 {
+  width: 100%;
+}
+
+#contentArea2 {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  width: 150px;
+  background-color: white;
+  border: none;
+}
+
+  //REPOS
+.rPreview  {
+  width: 100%;
+}
+
+.col-2 {
+  color: $textColor;
+  width: 49%;
+  padding: 30px 0;
+  border-bottom: 1px solid $githubDarkGrey;
+}
+
+.left {
+  text-align: left;
+  h2 {
+    margin: 0;
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.spaceOut {
+  margin: 0 10px 0 0;
+}
+
+  //PUBLIC ACTIVITY
+.paPreview {
+  width: 100%;
+}
+
+.col-1 {
+  color: $textColor;
+  width: 99%;
+  padding: 30px 0;
+  border-bottom: 1px solid $githubDarkGrey;
+  text-align: left;
+}
+
+.lighter {
+  color: $githubDarkGrey;
+}
+
 
 // FOOTER
 

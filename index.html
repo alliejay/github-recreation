@@ -21,14 +21,43 @@
 
     <div class="wrapper">
 
+<!-- SIDE PANEL -->
       <aside class="side-panel">
-
+        <div id="top-side">
+      <!-- PF PHOTO, NAME, LOGIN -->
+        </div>
+        <div id="second-side">
+      <!-- LOCATION, DATE CREATED -->
+        </div>
+        <div id="third-side">
+      <!-- SOCIAL INFO -->
+          <section class="s1"></section>
+          <section class="s2"></section>
+          <section class="s3"></section>
+        </div>
+        <div id="bottom-side">
+      <!-- ORGANIZATIONS: for some reason, my organizations show an empty array on github's website - so I manually added it here -->
+        <h2>Organizations</h2>
+        <a href="https://github.com/TIY-Charleston-Front-End-Oct2015"><img src="https://avatars2.githubusercontent.com/u/14251473?v=3&s=200" alt="The Iron Yard - Front End Engineering Class"></a>
+        </div>
       </aside>
 
-      <div class="container">
+      <section class="container">
+        <nav class="containerNav">
+          <ul>
+            <button id="switchR"><li><span class="octicon octicon-repo spaceOut"></span>Repositories</li></button>
+            <button id="switchPA"><li><span class="octicon octicon-rss spaceOut"></span>Public Activity</li></button>
+          </ul>
+        </nav>
+        <section id="contentArea1">
 
-      </div>
+        </section>
+        <section id="contentArea2" class="hidden">
+
+        </section>
+      </section>
     </div>
+
     <footer>
       <section class="col-3">
         <nav class="bottom-nav" id="left-bn">
@@ -63,5 +92,12 @@
         </nav>
       </section>
     </footer>
+    <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="github.js">
+    </script>
+    <script type="text/javascript" src="main.js">
+    </script>
   </body>
 </html>
