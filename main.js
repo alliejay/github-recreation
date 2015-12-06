@@ -147,6 +147,8 @@ _.each(activityData, function(el, idx, arr) {
   }
 });
 
+// ^ adjust all to pull from pubActivity, then message & sha will pull from push event if statment
+
 $('#contentArea2').append(paHTML);
 
 var contentArea1 = document.getElementById('contentArea1');
